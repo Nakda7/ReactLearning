@@ -1,0 +1,51 @@
+html, body{
+    background-color: #000;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 70px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    color: blueviolet;
+    text-align: center;
+    font-size: 5rem;
+}
+
+h2{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 4rem;
+}
+
+h3{
+    color: darksalmon;
+    text-align: center;
+}
+
+button{
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+
+.text-with-shadow {
+    font-size: 36px;
+    color: white;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-with-shadow::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: transparent;
+    background: linear-gradient(90deg, rgba(173, 185, 201, 0.2), rgba(255, 255, 255, 1));
+    filter: blur(10px);
+  }
